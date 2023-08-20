@@ -6,7 +6,7 @@ on:
       ROM_URL:
         description: 'ROM_URL'
         required: true
-        default: 'https://get.pixelexperience.org/ZitpZUZNUWVmM2cwLzkzQzFaMW9FOUQyaFo1WnR0RWNhbXNzUTJEaUJvaDdnZkp2NlQ2ZlVOVlBrVzNub21lenpmMjJXZzFDdFc0Y0N4YkFJYUQ4bWp'
+        default: 'https://bigota.d.miui.com/V12.0.1.0.PDEMIXM/miui_MIMIX2Global_V12.0.1.0.PDEMIXM_64006b3102_9.0.zip'
       ZIP_NAME:
         description: 'ZIP_NAME'
         required: true
