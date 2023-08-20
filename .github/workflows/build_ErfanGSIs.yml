@@ -1,23 +1,25 @@
 name: build_ErfanGSIs
 
 on:
-#  release:
-#    types: [published]
-#  push:
-#    branches:
-#      - master
-#    paths:
-#      - '.config'
-#  schedule:
-#    - cron: 0 8 * * 5
-  watch:
-    types: [started]
-    
-env:
-  ROM_URL: https://bigota.d.miui.com/V12.0.1.0.PDEMIXM/miui_MIMIX2Global_V12.0.1.0.PDEMIXM_64006b3102_9.0.zip
-  ROM_NAME: MIUI
-  BUILD_TYPE: ab
-  TZ: Asia/Shanghai
+workflow_dispatch:
+    inputs:
+      ROM_URL:
+        description: 'ROM_URL'
+        required: true
+        default: 'https://bigota.d.miui.com/V12.0.1.0.PDEMIXM/miui_MIMIX2Global_V12.0.1.0.PDEMIXM_64006b3102_9.0.zip'
+      TZ:
+        description: 'TZ'
+        required: true
+        default: 'Asia/Shanghai'
+      ROM_NAME:
+        description: 'ROM_NAME'
+        required: true
+        default: 'MIUI'
+      BUILD_TYPE:
+        description: 'BUILD_TYPE'
+        required: true
+        default: 'ab'
+
 
 jobs:
   build:
