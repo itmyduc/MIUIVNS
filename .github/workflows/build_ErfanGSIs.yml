@@ -26,12 +26,12 @@ on:
 
 
 jobs:
-  build:
-    runs-on: ubuntu-18.04
+    build:
+    runs-on: ubuntu-20.04
 
     steps:
-       - name: Checkout
-         uses: actions/checkout@master
+      - name: Get the source code of this repositorie...
+        uses: actions/checkout@main
            
        - name: Initialization environment
          run: |
