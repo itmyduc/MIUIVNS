@@ -27,11 +27,11 @@ on:
 
 jobs:
     build:
-    runs-on: ubuntu-20.04
-
+    name: 'Xem quá trình...'
+    runs-on: ubuntu-22.04
     steps:
-      - name: Get the source code of this repositorie...
-        uses: actions/checkout@main
+      - name: Checkout
+        uses: actions/checkout@v3
            
        - name: Initialization environment
          run: |
